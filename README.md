@@ -1,2 +1,2 @@
-# HackMSIT
-Website for HackGTBIT
+# IOSD-HackMSIT-Website
+Hackathon Website
