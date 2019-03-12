@@ -1,1 +1,3 @@
-# HackMSIT-FrontendFiles
+# HackMSIT
+Website for HackMSIT
+
