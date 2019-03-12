@@ -1,0 +1,2 @@
+# HackMSIT
+Website for HackMSIT
