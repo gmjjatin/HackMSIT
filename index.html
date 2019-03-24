@@ -33,16 +33,38 @@
   background-color: inherit!important;
 
 }
+
+.Rectangle-faq{
+  margin:0 auto;
+  height:auto;
+}
+.Rectangle-4{
+  width:265px;
+}
+
+.time-info>h3>a:hover{
+
+  background-color:none;
+    text-decoration: none;
+}
+
+
+
 .silver-flex-column img{
   width:150px;
   height:auto;
 }
+
 @media screen and (max-width:600px) {
   #speackers .Rectangle-12 .speackers .speacker{
     text-align: center;
   }
+  .Rectangle-4{
+    margin-left:15px!important;
+  }
   .silver-flex-column img{
     width: 40vw!important;
+    height:auto!important;
   }
   .register-float{
       padding: 7em!important;
@@ -66,8 +88,12 @@
   }
 
 }
+.sidebar-nav-item{
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
     </style>
-      <body>
+      <body style="scroll-behaviour:smooth;">
 
 
         <p class="register-float" style="z-index:10;transition:.6s;position: fixed;left:0;bottom:0;padding: 9em;background: #dc3545;margin: 0;border: 1px solid #dc3545;border-radius: 50%;transform: translate(-50%,50%);">
@@ -97,16 +123,15 @@
         <div id=side-menu-toggle>
         <div id=hamburger> <span class=hamburger-span></span> <span class=hamburger-span></span>
           <span class=hamburger-span></span> </div>
-
           <div id=cross> <span class=hamburger-span></span>
             <span class=hamburger-span></span> </div> </div>
             <div id=side-menu> <ul class=sidebar-nav> <li class=sidebar-nav-item>
-              <svg class=circle id=cfaq> <circle/> </svg> <a class=js-scroll-trigger href=#faq>ABOUT US | FAQs</a> </li>
-              <li class=sidebar-nav-item> <svg class=circle id=croad> <circle/> </svg> <a class=js-scroll-trigger href=#road>ROAD TO HACKMSIT</a> </li>
-               <li class=sidebar-nav-item> <svg class=circle id=ctracks> <circle/> </svg> <a class=js-scroll-trigger href=#tracks>PRIZES</a> </li>
-               <li class=sidebar-nav-item> <svg class=circle id=csponsors> <circle/> </svg> <a class=js-scroll-trigger href=#sponsors>SPONSORS</a> </li>
-               <li class=sidebar-nav-item> <svg class=circle id=ctime> <circle/> </svg> <a class=js-scroll-trigger href=#timetable>TIMELINE</a> </li>
-               <li class=sidebar-nav-item> <svg class=circle id=cspeackers> <circle/> </svg> <a class=js-scroll-trigger href=#speackers>MEET THE TEAM</a> </li>
+              <svg class=circle id=cfaq> <circle/> </svg> <a  href=#aboutus>ABOUT US | FAQs</a> </li>
+              <li class=sidebar-nav-item> <svg class=circle id=croad> <circle/> </svg> <a  href=#road>ROAD TO HACKMSIT</a> </li>
+               <li class=sidebar-nav-item> <svg class=circle id=ctracks> <circle/> </svg> <a  href=#prizes>PRIZES</a> </li>
+               <li class=sidebar-nav-item> <svg class=circle id=csponsors> <circle/> </svg> <a  href=#sponsors>SPONSORS</a> </li>
+               <li class=sidebar-nav-item> <svg class=circle id=ctime> <circle/> </svg> <a  href=#timeline>TIMELINE</a> </li>
+               <li class=sidebar-nav-item> <svg class=circle id=cspeackers> <circle/> </svg> <a  href=#team>MEET THE TEAM</a> </li>
              </ul> </div> <div class=menu-overlay></div> <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 
@@ -200,7 +225,7 @@ function expandFAQ(id){
 
 
      <div class=Rectangle-2>
-       <div class="HackMoscow-is-one-t">
+       <div id=aboutus class="HackMoscow-is-one-t">
          <p> IOSD MSIT brings MSIT's most awaited and fun-filled hackathon. With participation from colleges all across Delhi and developers divergent to different frameworks and languages, this Hackathon is not only about competition but about witnessing a whole new level of ideas and creativity. The word "Hack" of Hackathon describes how different technologies come together to solve a problem. Teams of up to 4 people will be working on innovative software and hardware solutions to real-world problems. </p>
         <p>
           Your <b>food, coffee and internet</b> is on to us.You just have to register and focus on : <b>BUILD-INNOVATE-TRIUMPH</b>.
@@ -220,7 +245,7 @@ function expandFAQ(id){
       </section>
      <section id=road>
       <div class=Rectangle-6> </div>
-      <div class="Rectangle-5"> <h2>#RoadToHackMSIT</h2>
+      <div class="Rectangle-5"> <h2><strong>#RoadToHackMSIT</strong></h2>
       <div class="road_desription">
         <p>HackMSIT consist of <b>3 phases</b>:<br>
 
@@ -229,19 +254,22 @@ function expandFAQ(id){
          <b style="color:#DC3545;">2. Phase 2 (3 to 4 April 2019 | ONLINE)</b>: Selected teams will have to submit their project's code/implementation and a video demonstration of their project.<br>
 
          <b style="color:#DC3545;">3. Phase 3 (6 April 2019 | ON VENUE)</b>: Selected teams will be mentored for improvements in their projects and will code these changes at the venue (MSIT). After that, pitching will be done, based on which winners of the hackathon will be decided.<br>
+         <button type="button"class="btn btn-danger" ><a style="color:white;" href="docs/HackMSIT.pdf" target="_blank">DETAILED GUIDELINES</a></button>
        </p>
+
          </div>
-         <h3 style="text-align:center;">THEMES</h3>
-         <p style="text-align:center;">Will be revealed on <strong style="color: #DC3545;">30<sup>th</sup> March 2019</strong></p>
+
+         <h2 style="text-align:center;"><strong>THEMES</strong></h3>
+         <p style="text-align:center">Themes will be revealed on <strong style=";color:#DC3545;">30<sup>th</sup> March 2019</strong></p>
         </div>
      <svg id=lines1 viewBox="0 0 690 268" height=268 width=690> <polyline points="662,0 662,126 0,126 0,268"/>
       <polyline points="670,0 670,134 8,134 8,268"/> <polyline points="678,0 678,142 16,142 16,268"/>
      </svg>
     </section>
-       <section id=tracks >
+       <section id=prizes >
 
          <div class=Rectangle-21 style="height: auto;padding:20px">
-           <h3>PRIZES AND GOODIES</h3>
+           <h2><strong>PRIZES AND GOODIES</strong></h2>
 
             <div class="row" style="justify-content: center;">
                 <div class="col-md-4"
@@ -302,43 +330,40 @@ function expandFAQ(id){
 
     <svg id=lines1 viewBox="0 0 690 268" height=268 width=690> <polyline points="0,0 0,142 337,142 337,268"/> <polyline points="8,0 8,134 345,134 345,268"/> <polyline points="16,0 16,126 353,126 353,268"/> </svg> </div></section>
      <section id=sponsors> <div class=Rectangle-8 style="min-height:1302px!important;"> </div>
-       <div class=Rectangle-7 style="height: auto;background-color:rgba(20,3,19,.81)"> <div>
+       <div class=Rectangle-7 style="height: auto;background-color:rgba(20,3,19,.81)"> <div style="padding-left:10px;">
 
-      <h2 style="width: 100%;text-align: center;color:white;display: block;"><strong>OUR SPONSORS</strong></h2>
+      <h2 style="width: 100%;text-align: center;color:white;display: block;padding-top: 40px"><strong>OUR SPONSORS</strong></h2>
          <div class=grid-container>
 
         <div class=silver-flex-column style="display: inline-block;">
          <div class=silver-flex-row>
           <div class=logo>
-            <a href="https://www.github.com/"><img src=img/githubb.png ></a>
+            <a href="https://www.github.com/"><img src=img/githubb.png height=75px width=150px></a>
           </div>
           <div class=logo>
-            <img src=img/digitalocean.png>
+            <a href="https://www.digitalocean.com/"><img src=img/digitalocean.png height=150px width=150px></a>
           </div>
           <div class=logo>
-            <img src=img/microsoft.png>
+            <a href="https://www.microsoft.com/en-in"><img src=img/microsoft.png height=33.22px width=150px></a>
           </div>
           <div class=logo>
-            <img src=img/mozilla.png>
+            <a href="https://www.mozilla.org/en-US/"><img src=img/mozilla.png height=150px width=150px></a>
           </div>
-
-
-
          </div>
         </div>
         <div class=silver-flex-column style="display: inline-block;">
          <div class=silver-flex-row>
           <div class=logo>
-            <img src=img/npm.png>
+            <a href="https://www.npmjs.com/"><img src=img/npm.png height=150px width=150px></a>
           </div>
           <div class=logo>
-            <img src=img/tech.png>
+            <a href="https://get.tech/"><img src=img/tech.png height=150px width=150px></a>
           </div>
           <div class=logo>
-            <img src=img/HElogo.png>
+            <a href="https://www.hackerearth.com/"><img src=img/HElogo.png height=30px width=150px></a>
           </div>
           <div class=logo>
-            <img src=img/cb.jpg>
+            <a href="https://codingblocks.com/"><img src=img/cb.jpg height=150px width=150px></a>
           </div>
 
 
@@ -350,16 +375,16 @@ function expandFAQ(id){
           <div class=silver-flex-column style="display: inline-block;">
          <div class=silver-flex-row>
           <div class=logo>
-            <img src=img/ongc.jpg>
+            <a href="https://www.ongcindia.com/"><img src=img/ongc.jpg height=150px width=150px></a>
           </div>
           <div class=logo>
-          <img src=img/gitlab.png>
+          <a href="https://about.gitlab.com/"><img src=img/gitlab.png height=150px width=150px></a>
           </div>
           <div class=logo>
-            <img src=img/codenin.jpg>
+            <a href="https://www.codeninjas.com/"><img src=img/codenin.jpg height=150px width=150px></a>
           </div>
           <div class=logo>
-            <img src=img/jetbrains.png>
+            <a href="https://www.jetbrains.com/"><img src=img/jetbrains.png height=150px width=150px></a>
           </div>
 
          </div>
@@ -368,7 +393,7 @@ function expandFAQ(id){
         <div class=silver-flex-column style="display: inline-block;">
          <div class=silver-flex-row>
           <div class=logo>
-            <a href="https://www.thecoffeebond.com/"><img src=img/cofeebond.JPG></a>
+            <a href="https://www.thecoffeebond.com/"><img src=img/cofeebond.JPG height=150px width=150px></a>
 
           </div>
 
@@ -382,72 +407,72 @@ function expandFAQ(id){
 
 <style type="text/css">
   .speacker img{
-    height: 96px;width: 96px;border-radius: 48px;border: 2px solid #2b2b3a;object-fit: cover;
+    height: 96px;width: 96px;border-radius: 48px;border: 2px solid white;object-fit: cover;
   }
 </style>
 
 
-      <section id=timetable> <div class=Rectangle-16> </div>
+      <section id=timeline> <div class=Rectangle-16> </div>
       <div class=Rectangle-15>
-       <div class=timetable style= "text-orientation: upright"> <h3 style="text-align: center; font-size: 50px">TIMELINE</h3> <div class=timeline style= "text-orientation: upright"> <div class=timesection style= "text-orientation: upright"> <div class=timeblock style=> <h3>15/03</h3> <h4>29/03</h4> </div> <div class=time-info style= "text-orientation: upright; /*transform: rotate(1deg)*/;"> <h3>Registration </h3> </div> </div> <div class=timesection> <div class=timeblock> <h3><br>30/03</h3> <h4>10:00</h4> </div> <div class=time-info> <h3><br>Random Themes </h3> </div> </div> <!-- <div class=timesection> <div class=timeblock> <h3>30/03</h3> <h4>18:00-20:00</h4> </div> <div class=time-info> <h3>Calling , Mailing to selected team</h3> </div> </div> --> <!-- <div class=timesection> <div class=timeblock> <h2>21:00 </h2></div> <div class=time-info> <h3>CODING START</h3> </div> </div> --> <div class=timesection> <div class=timeblock> <h3>31/03</h3> <h4>01/04</h4> </div> <div class=time-info> <h3>Idea ,Plan submission</h3> </div> </div> <div class=timesection> <div class=timeblock> <h2>02/04</h2> </div> <div class=time-info> <h3>Phase 1 Results<br></h3> </div> </div> <!-- <div class=timesection> <div class=timeblock> <h3>02/04</h3> <h4>18:00-20:00</h4> </div> <div class=time-info> <h3>Calling , Mailing to selected team</h3> </div> </div> --> <div class=timesection> <div class=timeblock> <h3>03/04</h3> <h4>04/04</h4> </div> <div class=time-info> <h3>Code Submission</h3> </div> </div><div class=timesection> <div class=timeblock> <h2>05/04</h2> <!-- <h4>04/04</h4> --> </div> <div class=time-info> <h3>Phase 2 Results</h3> </div> </div><!-- <div class=timesection> <div class=timeblock> <h3>05/04</h3> <h4>18:00-20:00</h4> </div> <div class=time-info> <h3>Calling , Mailing to selected team</h3> </div> </div> --><div class=timesection> <div class=timeblock> <h2>06/04</h2></div> <div class=time-info> <h3>Mentoring - Coding - Pitching - Result</h3> </div> </div> </div>
+       <div class=timetable style= "text-orientation: upright"> <h2 style="text-align: center; font-size: 40px"><strong>TIMELINE</strong></h2> <div class=timeline style= "text-orientation: upright"> <div class=timesection style= "text-orientation: upright"> <div class=timeblock style=> <h3>15/03</h3> <h4>29/03</h4> </div> <div class=time-info style= "text-orientation: upright; /*transform: rotate(1deg)*/;"> <h3>Registration </h3> </div> </div> <div class=timesection> <div class=timeblock> <h3><br>30/03</h3> <h4>10:00</h4> </div> <div class=time-info> <h3><br>Themes Revelation </h3> </div> </div> <!-- <div class=timesection> <div class=timeblock> <h3>30/03</h3> <h4>18:00-20:00</h4> </div> <div class=time-info> <h3>Calling , Mailing to selected team</h3> </div> </div> --> <!-- <div class=timesection> <div class=timeblock> <h2>21:00 </h2></div> <div class=time-info> <h3>CODING START</h3> </div> </div> --> <div class=timesection> <div class=timeblock> <h3>31/03</h3> <h4>01/04</h4> </div> <div class=time-info> <h3>Idea ,Plan submission</h3> </div> </div> <div class=timesection> <div class=timeblock> <h2>02/04</h2> </div> <div class=time-info> <h3>Phase 1 Results<br></h3> </div> </div> <!-- <div class=timesection> <div class=timeblock> <h3>02/04</h3> <h4>18:00-20:00</h4> </div> <div class=time-info> <h3>Calling , Mailing to selected team</h3> </div> </div> --> <div class=timesection> <div class=timeblock> <h3>03/04</h3> <h4>04/04</h4> </div> <div class=time-info> <h3>Code Submission</h3> </div> </div><div class=timesection> <div class=timeblock> <h2>05/04</h2> <!-- <h4>04/04</h4> --> </div> <div class=time-info> <h3>Phase 2 Results</h3> </div> </div><!-- <div class=timesection> <div class=timeblock> <h3>05/04</h3> <h4>18:00-20:00</h4> </div> <div class=time-info> <h3>Calling , Mailing to selected team</h3> </div> </div> --><div class=timesection> <div class=timeblock> <h2>06/04</h2></div> <div class=time-info> <h3>Mentoring - Coding - Pitching - Result</h3> </div> </div> </div>
        <h3>April, 6</h3>
-       <div class=timeline> <div class=timesection> <div class=timeblock> <h3>08:00</h3> <h4>09:00</h4> </div> <div class=time-info> <h3>Registration -<br> ID Allotment</h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>09:00</h3> <h4>09:30</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#phystech>Opening Ceremony</a></h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>09:30</h3> <h4>10:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll-trigger href=#innopolis>Mentoring</a></h3> </div> </div><div class=timesection> <div class=timeblock> <h3>10:00</h3> <h4>12:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#avast>Coding</a></h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>12:00</h3> <h4>13:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#regru>LUNCH</a></h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>13:00</h3> <h4>14:00</h4> </div> <div class=time-info> <h3>Finale Touch up / Coding</h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>14:00</h3> <h4>16:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#sibur>Pitching</a></h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>16:00</h3> <h4>16:30</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#1C>Cultural  (Mutant)</a></h3> </div> </div><div class=timesection> <div class=timeblock> <h3>17:00</h3> <h4>18:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#1C>Result / Final Ceremony</a></h3> </div> </div> </div> </div> </div> </section>
+       <div class=timeline> <div class=timesection> <div class=timeblock> <h3>08:00</h3> <h4>09:00</h4> </div> <div class=time-info> <h3>Registration -<br> ID Allotment</h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>09:00</h3> <h4>09:30</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#phystech>Opening Ceremony</a></h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>09:30</h3> <h4>10:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll-trigger href=#innopolis>Mentoring</a></h3> </div> </div><div class=timesection> <div class=timeblock> <h3>10:00</h3> <h4>12:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#avast>Coding</a></h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>12:00</h3> <h4>13:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#regru>LUNCH</a></h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>13:00</h3> <h4>14:00</h4> </div> <div class=time-info> <h3>Finale Touch up / Coding</h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>14:00</h3> <h4>16:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#sibur>Pitching</a></h3> </div> </div> <div class=timesection> <div class=timeblock> <h3>16:00</h3> <h4>16:30</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#1C>Cultural Program</a></h3> </div> </div><div class=timesection> <div class=timeblock> <h3>17:00</h3> <h4>18:00</h4> </div> <div class=time-info> <h3 class=lecture><a class=js-scroll href=#1C>Result / Final Ceremony</a></h3> </div> </div> </div> </div> </div> </section>
 
 <svg id=lines1 viewBox="0 0 690 268" height=268 width=690><polyline points="0,0 0,142 662,142 662,268"/> <polyline points="8,0 8,134 670,134 670,268"/> <polyline points="16,0 16,126 678,126 678,268"/> </svg>
 
 
 
-     <section id=speackers>
+     <section id=team>
        <div class=Rectangle-13 style="height: auto;"></div>
        <div class=Rectangle-12 style="height: auto;background-color:rgba(20,3,19,.81)"> <h1 style="width: 100%;text-align: center;color: white;font-size: 30px; ">
          <br>
          <h2><strong>ORGANIZERS</strong></h2>
          <div class=speackers>
-       <h3>OPERATIONS TEAM</h3><br>
-     	<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/jatin_sharma.jpg alt=""><h3>Jatin Sharma </h3><p>Operations Head</p></div>
-			<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/prabhleen.jpg alt=""><h3>Prabhleen Kaur</h3><p>Operations</p></div>
-			<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/mayank.jpg alt=""><h3>Mayank Kumar</h3><p>Operations</p></div>
-			<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/vimal.JPG alt=""><h3>Vimal Kumar Tripathi</h3><p>Operations</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/shivbhar.jpg alt=""><h3>Shiv Bhardwaj</h3><p>Operations</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/zeeshan.jpg alt=""><h3>Zeeshan Ali</h3><p>Operations</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/alok.jpg alt=""><h3>Alok Kumar</h3><p>Operations</p></div>
-      <br><h3>TECHNICAL TEAM</h3><br>
-			<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/upendra.jpg alt=""><h3>Upendra Sharma</h3><p>Tech Head</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ashish.jpg alt=""><h3>Ashish Dagar</h3><p>Tech Head</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/yashpreet.jpeg alt=""><h3>Yash Preet</h3><p>Tech/Multimedia Head</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ankur_gupta.jpg alt=""><h3>Ankur Gupta</h3><p>Tech</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/gagan.jpg alt=""><h3>Gagan Singh</h3><p>Tech</p></div>
-			<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ayush.jpg alt=""><h3>Ayush Aggarwal </h3><p>Tech</p></div>
-			<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/aman.jpg alt=""><h3>Aman Aggarwal</h3><p>Tech</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/anmol.jpg alt=""><h3>Anmol</h3><p>Tech</p></div>
-      <br><h3>DESIGN & CONTENT TEAM</h3><br>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/devansh.jpeg alt=""><h3>Devansh Kumar</h3><p>Designer</p></div><br>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ishan.jpg alt=""><h3>Ishan Vohra</h3><p>Videography & Design</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/anshuman.jpg alt=""><h3>Anshuman</h3><p>Content Head</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/gayatri.jpeg alt=""><h3>Gayatri Sridhar</h3><p>Content</p></div>
-      <br><h3>PUBLICITY TEAM</h3><br>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/daksh.jpg alt=""><h3>Daksh Taneja</h3><p>Publicity & Social Media Head</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/karthik.jpg alt=""><h3>Kartik Kumar</h3><p>Social Media</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ankush.jpg alt=""><h3>Ankush Shukla</h3><p>Social Media</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/mridul.jpg alt=""><h3> Mridul Jain</h3><p>Publicity</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/amisha.jpg alt=""> <h3 style="color: white">Amisha</h3> <p>Publicity</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/himanshu.jpeg alt=""> <h3 style="color: white">Himanshu</h3> <p>Publicity</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/rishabh.jpeg alt=""> <h3 style="color: white">Rishabh</h3> <p>Publicity</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/devesh.jpeg alt=""><h3>Devesh Bhatla</h3><p>Publicity</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/yukti.jpeg alt=""><h3>Yukti Arora</h3><p>Publicity</p></div>
+       <h3 >OPERATIONS TEAM</h3><br>
+     	<a href="http://cv-jatinsharma.appspot.com/"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/jatin_sharma.jpeg alt=""><h3>Jatin Sharma </h3><p>Operations Head</p></div></a>
+			<a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/prabhleen.jpg alt=""><h3>Prabhleen Kaur</h3><p>Operations</p></div></a>
+			<a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/mayank.jpg alt=""><h3>Mayank Kumar</h3><p>Operations</p></div></a></a>
+			<a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/vimal.JPG alt=""><h3>Vimal Kumar Tripathi</h3><p>Operations</p></div></a>
+      <!-- <a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/shivbhar.jpg alt=""><h3>Shiv Bhardwaj</h3><p>Operations</p></div></a> -->
+      <a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/zeeshan.jpg alt=""><h3>Zeeshan Ali</h3><p>Operations</p></div></a>
+      <a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/alok.jpg alt=""><h3>Alok Kumar</h3><p>Operations</p></div></a>
+      <br><h3 style="margin-top: 1em;">TECHNICAL TEAM</h3><br>
+			<a href="https://www.linkedin.com/in/upendra-sharma-20106815a/"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/upendra.jpg alt=""><h3>Upendra Sharma</h3><p>Tech Head</p></div></a>
+      <a href="https://www.linkedin.com/in/ashish-dagar-19b44713a"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ashish.jpg alt=""><h3>Ashish Dagar</h3><p>Tech Head</p></div></a>
+      <a href="https://www.linkedin.com/in/yash-preet-252b25151"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/yashpreet.jpeg alt=""><h3>Yash Preet</h3><p>Tech/Multimedia Head</p></div></a>
+      <a href="https://www.linkedin.com/in/ankur-gupta-155451175/"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ankur_gupta.jpg alt=""><h3>Ankur Gupta</h3><p>Tech</p></div></a>
+      <a href=""><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/gagan.jpg alt=""><h3>Gagan Singh</h3><p>Tech</p></div></a>
+			<a href="https://www.linkedin.com/in/ayush-aggarwal-147420106"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ayush.jpg alt=""><h3>Ayush Aggarwal </h3><p>Tech</p></div></a>
+			<a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/aman.jpg alt=""><h3>Aman Aggarwal</h3><p>Tech</p></div></a>
+      <a href="https://www.linkedin.com/in/anmol-anmol-1833a7179/"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/anmol.jpg alt=""><h3>Anmol</h3><p>Tech</p></div></a>
+      <br><h3 style="margin-top: 1em;">DESIGN & CONTENT TEAM</h3><br>
+      <a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/devansh.jpeg alt=""><h3>Devansh Kumar</h3><p>Designer</p></div></a>
+      <a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ishan.jpg alt=""><h3>Ishan Vohra</h3><p>Videography & Design</p></div></a>
+      <a href="https://www.linkedin.com/in/anshuman-padhi-18446a150"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/anshuman.jpg alt=""><h3>Anshuman</h3><p>Content Head</p></div></a>
+      <a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/gayatri.jpeg alt=""><h3>Gayatri Sridhar</h3><p>Content</p></div></a>
+      <br><h3 style="margin-top: 1em;">PUBLICITY TEAM</h3><br>
+      <a href="https://www.linkedin.com/in/daksh-taneja-b94859168/"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/daksh.jpg alt="" style="transform: rotate(270deg)"><h3>Daksh Taneja</h3><p>Publicity & Social Media Head</p></div></a>
+      <a href="https://www.linkedin.com/in/kartik-kumar-57997314b"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/karthik.jpg alt=""><h3>Kartik Kumar</h3><p>Social Media</p></div></a>
+      <a href="https://www.linkedin.com/in/ankush-shukla-85370615b/"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ankush.jpg alt=""><h3>Ankush Shukla</h3><p>Social Media</p></div></a>
+      <a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/mridul.jpg alt=""><h3> Mridul Jain</h3><p>Publicity</p></div></a>
+      <a href="https://www.linkedin.com/in/amisha-kumari-1a5403181"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/amisha.jpg alt=""> <h3 style="color: white">Amisha</h3> <p>Publicity</p></div></a>
+      <a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/himanshu.jpeg alt=""> <h3 style="color: white">Himanshu</h3> <p>Publicity</p></div></a>
+      <a href="#"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/rishabh.jpeg alt=""> <h3 style="color: white">Rishabh</h3> <p>Publicity</p></div></a>
+      <a href="https://www.linkedin.com/in/devesh-bhatla-14810697"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/devesh.jpeg alt=""><h3>Devesh Bhatla</h3><p>Publicity</p></div></a>
+      <a href="https://www.linkedin.com/in/yukti-arora-002522161/"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/yukti.jpeg alt=""><h3>Yukti Arora</h3><p>Publicity</p></div></a>
 
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/yashtika.JPG alt=""><h3>Yashtika Kakkar</h3><p>Publicity</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/riya.jpg alt=""><h3>Riya Singh</h3><p>Publicity</p></div>
-      <br><h3>CREATIVITY TEAM</h3><br>
-     	<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/hemlata.jpg alt=""><h3>Hemlatha Pandey</h3><p>Creativity Head</p></div>
-     	<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/shrishti.jpg alt=""><h3>Srishti Srivastava </h3><p>Creativity</p></div>
-     	<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/bhumika.jpg alt=""><h3>Bhumika Singh</h3><p>Creativity</p></div>
-     	<div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ritika.jpg alt=""><h3>Ritika Chandra</h3><p>Creativity</p></div>
-      <br><h3>CORPORATE TEAM</h3><br>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/abhisek.jpg alt=""> <h3 style="color: white">Abhishek Sansanwal</h3> <p>Corporate Head</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/shivam.jpeg alt=""><h3>Shivam Gandhi</h3><p>Corporate</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/sonalika.jpeg alt=""><h3>Sonalika Roy</h3><p>Corporate</p></div>
-      <div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/gyanvi.jpeg alt=""><h3>Gyanvi Aggarwal</h3><p>Corporate</p></div>
+      <a href="https://www.linkedin.com/in/yashtika-kakkar"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/yashtika.JPG alt=""><h3>Yashtika Kakkar</h3><p>Publicity</p></div></a>
+      <a href="https://www.linkedin.com/in/riya-singh-6428a416b"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/riya.jpg alt=""><h3>Riya Singh</h3><p>Publicity</p></div></a>
+      <br><h3 style="margin-top: 1em;">CREATIVITY TEAM</h3><br>
+     	<a href="https://www.linkedin.com/in/hemlatha-pandey-220920143"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/hemlata.jpg alt=""><h3>Hemlatha Pandey</h3><p>Creativity Head</p></div></a>
+     	<a href="https://www.linkedin.com/in/srishti-srivastava-0a74aa154/"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/shrishti.jpg alt=""><h3>Srishti Srivastava </h3><p>Creativity</p></div></a>
+     	<a href="https://www.linkedin.com/in/bhumika-singh-496920143/"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/bhumika.jpg alt=""><h3>Bhumika Singh</h3><p>Creativity</p></div></a>
+     	<a href="https://www.linkedin.com/in/ritika-chandra-059ba2159"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/ritika.jpg alt=""><h3>Ritika Chandra</h3><p>Creativity</p></div></a>
+      <br><h3 style="margin-top: 1em;">CORPORATE TEAM</h3><br>
+      <a href="https://www.linkedin.com/in/abhisheksansanwal"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/abhisek.jpg alt=""> <h3 style="color: white">Abhishek Sansanwal</h3> <p>Corporate Head</p></div></a>
+      <a href="https://www.linkedin.com/in/shivam-gandhi-2366b4182"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/shivam.jpeg alt=""><h3>Shivam Gandhi</h3><p>Corporate</p></div></a>
+      <a href="https://www.linkedin.com/in/sonalika-roy-094481170"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/sonalika.jpeg alt=""><h3>Sonalika Roy</h3><p>Corporate</p></div></a>
+      <a href="https://www.linkedin.com/in/gyanviagarwal"><div class=speacker id=phystech style="margin-bottom: 5px;"><img src=img/gyanvi.jpeg alt=""><h3>Gyanvi Aggarwal</h3><p>Corporate</p></div></a>
 
       </div>
 
@@ -468,7 +493,7 @@ function expandFAQ(id){
                      <li class=list-inline-item>
                        <a class="social-link rounded-circle text-white" href="https://www.google.com/maps/place/Maharaja+Surajmal+Institute+Of+Technology/@28.6210152,77.0926258,15z/data=!4m5!3m4!1s0x0:0xaff19e718be2136b!8m2!3d28.6210152!4d77.0926258"/>
                        <img src=img/periscope.svg> </a>
-                     </li> </ul> <p>Organized by :  <b>IOSD MSIT</b></p> </div> </section> <script>window.jQuery||document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>'),document.write('<script src="js/vendor/jquery.easing.min.js"><\/script>')</script> <script src=../code.jquery.com/ui/1.12.1/jquery-ui.js></script> <script src="js/map6da2.js?v=2.2"></script> <script type="text/javascript" src="main-be1dbf.js"></script></body> </html>
+                     </li> </ul> <p>Organized by :  <b><a href="https://www.facebook.com/iosdmsit/" style="color: white">IOSD MSIT</a></b></p> </div> </section> <script>window.jQuery||document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>'),document.write('<script src="js/vendor/jquery.easing.min.js"><\/script>')</script> <script src=../code.jquery.com/ui/1.12.1/jquery-ui.js></script> <script src="js/map6da2.js?v=2.2"></script> <script type="text/javascript" src="main-be1dbf.js"></script></body> </html>
      <!-- <section id=speackers>
        <div class=Rectangle-13 style="height: auto;"></div>
        <div class=Rectangle-12 style="height: auto;">
@@ -534,10 +559,20 @@ function expandFAQ(id){
                       </script>
                       <style media="screen">
                         .Rectangle-8{
-                          min-height: 1302px!important;
+                          min-height: 1345px!important;
                         }
                         .Rectangle-16{
                           min-height: none!important;
                         }
                       </style>
+                      <script type="text/javascript">
+                        $('#side-menu-toggle').click(function(){
+                          $('#side-menu').toggle()
+                          $('#side-menu-toggle').toggleClass('open')
+                        });
+                        $('.sidebar-nav-item a').click(function(){
+                          $('#side-menu').toggle()
+                          $('#side-menu-toggle').toggleClass('open')
+                        })
+                      </script>
 </body> </html>
