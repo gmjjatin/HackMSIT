@@ -82,7 +82,7 @@
   margin-bottom: 25px;
 }
     </style>
-      <body>
+      <body style="scroll-behaviour:smooth;">
 
 
         <p class="register-float" style="z-index:10;transition:.6s;position: fixed;left:0;bottom:0;padding: 9em;background: #dc3545;margin: 0;border: 1px solid #dc3545;border-radius: 50%;transform: translate(-50%,50%);">
@@ -115,12 +115,12 @@
           <div id=cross> <span class=hamburger-span></span>
             <span class=hamburger-span></span> </div> </div>
             <div id=side-menu> <ul class=sidebar-nav> <li class=sidebar-nav-item>
-              <svg class=circle id=cfaq> <circle/> </svg> <a class=js-scroll-trigger href=#aboutus>ABOUT US | FAQs</a> </li>
-              <li class=sidebar-nav-item> <svg class=circle id=croad> <circle/> </svg> <a class=js-scroll-trigger href=#road>ROAD TO HACKMSIT</a> </li>
-               <li class=sidebar-nav-item> <svg class=circle id=ctracks> <circle/> </svg> <a class=js-scroll-trigger href=#prizes>PRIZES</a> </li>
-               <li class=sidebar-nav-item> <svg class=circle id=csponsors> <circle/> </svg> <a class=js-scroll-trigger href=#sponsors>SPONSORS</a> </li>
-               <li class=sidebar-nav-item> <svg class=circle id=ctime> <circle/> </svg> <a class=js-scroll-trigger href=#timeline>TIMELINE</a> </li>
-               <li class=sidebar-nav-item> <svg class=circle id=cspeackers> <circle/> </svg> <a class=js-scroll-trigger href=#team>MEET THE TEAM</a> </li>
+              <svg class=circle id=cfaq> <circle/> </svg> <a  href=#aboutus>ABOUT US | FAQs</a> </li>
+              <li class=sidebar-nav-item> <svg class=circle id=croad> <circle/> </svg> <a  href=#road>ROAD TO HACKMSIT</a> </li>
+               <li class=sidebar-nav-item> <svg class=circle id=ctracks> <circle/> </svg> <a  href=#prizes>PRIZES</a> </li>
+               <li class=sidebar-nav-item> <svg class=circle id=csponsors> <circle/> </svg> <a  href=#sponsors>SPONSORS</a> </li>
+               <li class=sidebar-nav-item> <svg class=circle id=ctime> <circle/> </svg> <a  href=#timeline>TIMELINE</a> </li>
+               <li class=sidebar-nav-item> <svg class=circle id=cspeackers> <circle/> </svg> <a  href=#team>MEET THE TEAM</a> </li>
              </ul> </div> <div class=menu-overlay></div> <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 
@@ -400,7 +400,7 @@ function expandFAQ(id){
 </style>
 
 
-      <section id=team> <div class=Rectangle-16> </div>
+      <section id=timeline> <div class=Rectangle-16> </div>
       <div class=Rectangle-15>
        <div class=timetable style= "text-orientation: upright"> <h2 style="text-align: center; font-size: 40px"><strong>TIMELINE</strong></h2> <div class=timeline style= "text-orientation: upright"> <div class=timesection style= "text-orientation: upright"> <div class=timeblock style=> <h3>15/03</h3> <h4>29/03</h4> </div> <div class=time-info style= "text-orientation: upright; /*transform: rotate(1deg)*/;"> <h3>Registration </h3> </div> </div> <div class=timesection> <div class=timeblock> <h3><br>30/03</h3> <h4>10:00</h4> </div> <div class=time-info> <h3><br>Themes Revelation </h3> </div> </div> <!-- <div class=timesection> <div class=timeblock> <h3>30/03</h3> <h4>18:00-20:00</h4> </div> <div class=time-info> <h3>Calling , Mailing to selected team</h3> </div> </div> --> <!-- <div class=timesection> <div class=timeblock> <h2>21:00 </h2></div> <div class=time-info> <h3>CODING START</h3> </div> </div> --> <div class=timesection> <div class=timeblock> <h3>31/03</h3> <h4>01/04</h4> </div> <div class=time-info> <h3>Idea ,Plan submission</h3> </div> </div> <div class=timesection> <div class=timeblock> <h2>02/04</h2> </div> <div class=time-info> <h3>Phase 1 Results<br></h3> </div> </div> <!-- <div class=timesection> <div class=timeblock> <h3>02/04</h3> <h4>18:00-20:00</h4> </div> <div class=time-info> <h3>Calling , Mailing to selected team</h3> </div> </div> --> <div class=timesection> <div class=timeblock> <h3>03/04</h3> <h4>04/04</h4> </div> <div class=time-info> <h3>Code Submission</h3> </div> </div><div class=timesection> <div class=timeblock> <h2>05/04</h2> <!-- <h4>04/04</h4> --> </div> <div class=time-info> <h3>Phase 2 Results</h3> </div> </div><!-- <div class=timesection> <div class=timeblock> <h3>05/04</h3> <h4>18:00-20:00</h4> </div> <div class=time-info> <h3>Calling , Mailing to selected team</h3> </div> </div> --><div class=timesection> <div class=timeblock> <h2>06/04</h2></div> <div class=time-info> <h3>Mentoring - Coding - Pitching - Result</h3> </div> </div> </div>
        <h3>April, 6</h3>
@@ -556,6 +556,7 @@ function expandFAQ(id){
                       <script type="text/javascript">
                         $('#side-menu-toggle').click(function(){
                           $('#side-menu').toggle()
+                          $('#side-menu-toggle').toggleClass('open')
                         })
                       </script>
 </body> </html>
