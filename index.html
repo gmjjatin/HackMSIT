@@ -29,12 +29,45 @@
 .Rectangle-12 h2{
   text-align: center;
 }
+#sponsors .Rectangle-7 .grid-container{
+  background-color: inherit!important;
+
+}
+@media screen and (max-width:600px) {
+  #speackers .Rectangle-12 .speackers .speacker{
+    text-align: center;
+  }
+  .silver-flex-column img{
+    width: 40vw!important;
+  }
+  .register-float{
+      padding: 7em!important;
+  }
+
+  .span1{
+      transform: translate(5%,-150%)!important;
+  }
+  .span2{
+      transform: translate(-75%,-150%)!important;
+  }
+  .iosdmsit{
+    width: 90vw!important;
+    margin-top: 4em;
+  }
+  #button-main{
+    visibility: hidden!important;
+  }
+  #footer-social{
+    margin-bottom: 8em!important;
+  }
+
+}
     </style>
       <body>
 
 
         <p class="register-float" style="z-index:10;transition:.6s;position: fixed;left:0;bottom:0;padding: 9em;background: #dc3545;margin: 0;border: 1px solid #dc3545;border-radius: 50%;transform: translate(-50%,50%);">
-          <span style="
+          <span class="span1" style="
           position: fixed;
           transform: translate(25%,-180%);
           width: 90px;
@@ -46,7 +79,7 @@
         </p>
 
           <p class="register-float" style="z-index:10;transition:.6s;position: fixed;right:0;bottom:0;padding: 9em;background: #dc3545;margin: 0;border: 1px solid #dc3545;border-radius: 50%;transform: translate(50%,50%);">
-          <span style="
+          <span class="span2" style="
           position: fixed;
           transform: translate(-100%,-180%);
           width: 90px;
@@ -75,7 +108,7 @@
 
   <![endif]--> <section id=header-slide> <div class=container>
 <div class=grid-container>
-  <img src=img/iosdmsit1.png style="width:380px; height: auto;" align="center"><br>
+  <img  class="iosdmsit"src=img/iosdmsit1.png style="width:380px; height: auto;" align="center"><br>
   <small>Presents</small>
   <div class=logo>
    <img id=mainlogo src=img/icon.jpeg style="max-height: 50vw" align="center">
@@ -201,14 +234,14 @@ function expandFAQ(id){
      </svg>
     </section>
        <section id=tracks >
-         <div class=Rectangle-99> </div>
+
          <div class=Rectangle-21 style="height: auto;padding:20px">
            <h3>PRIZES AND GOODIES</h3>
 
             <div class="row" style="justify-content: center;">
                 <div class="col-md-4"
                     <center>
-                        <div class="card" style="width: 18rem; box-shadow: 0px 0px 8px red; background-color: rgba(20,3,19,0.81); margin-top: 10%; ">
+                        <div class="card" style="box-shadow: 0px 0px 8px red; background-color: rgba(20,3,19,0.81); margin-top: 10%; ">
                             <div class="card-body">
                                 <p class="card-text" style="padding-top: 10%;">
                                     </p><center style="padding-top: 10%; padding-bottom: 30%;">
@@ -225,7 +258,7 @@ function expandFAQ(id){
                 </div>
                 <div class="col-md-4">
                     <center>
-                        <div class="card" style="width: 18rem; box-shadow: 0px 0px 8px red; background-color: rgba(20,3,19,0.81); margin-top: 10%;">
+                        <div class="card" style=" box-shadow: 0px 0px 8px red; background-color: rgba(20,3,19,0.81); margin-top: 10%;">
                             <div class="card-body">
                                 <p class="card-text" style="padding-top: 10%;">
                                     </p><center style="padding-top: 10%; padding-bottom: 30%;">
@@ -242,7 +275,7 @@ function expandFAQ(id){
                 </div>
                 <div class="col-md-4" style="text-align: center;">
                     <center>
-                        <div class="card" style="width: 18rem; box-shadow: 0px 0px 8px red; background-color: rgba(20,3,19,0.81); margin-top: 10%;">
+                        <div class="card" style=" box-shadow: 0px 0px 8px red; background-color: rgba(20,3,19,0.81); margin-top: 10%;">
                             <div class="card-body">
                                 <p class="card-text" style="padding-top: 10%;">
                                     </p><center style="padding-top: 10%; padding-bottom: 30%;">
@@ -272,7 +305,7 @@ function expandFAQ(id){
         <div class=silver-flex-column style="display: inline-block;">
          <div class=silver-flex-row>
           <div class=logo>
-            <a href="https://www.github.com/"><img src=img/githubb.png width=150px height=75px></a>
+            <a href="https://www.github.com/"><img src=img/githubb.png ></a>
           </div>
           <div class=logo>
             <img src=img/digitalocean.png>
@@ -330,7 +363,7 @@ function expandFAQ(id){
         <div class=silver-flex-column style="display: inline-block;">
          <div class=silver-flex-row>
           <div class=logo>
-            <a href="https://www.thecoffeebond.com/"><img src=img/cofeebond.JPG width=150px height=150px></a>
+            <a href="https://www.thecoffeebond.com/"><img src=img/cofeebond.JPG></a>
           </div>
 
 
@@ -496,6 +529,9 @@ function expandFAQ(id){
                       <style media="screen">
                         .Rectangle-8{
                           min-height: 1302px!important;
+                        }
+                        .Rectangle-16{
+                          min-height: none!important;
                         }
                       </style>
 </body> </html>
