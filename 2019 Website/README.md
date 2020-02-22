@@ -1,3 +1,0 @@
-# HackMSIT
-Website for HackMSIT
-
