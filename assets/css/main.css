@@ -20,6 +20,9 @@ html {
   color: #fff;
 }
 
+.row {
+  justify-content: center;
+}
 
 .coming{
   box-sizing: border-box;
@@ -40,7 +43,7 @@ html {
 }
 
 .coming h1:hover{
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .each-team button{
@@ -1087,14 +1090,14 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #sponsors .spnsors-logo img{
-  max-width: 250px;
+  /* max-width: 250px; */
   height: auto;
   max-height: 200px;
 }
 
 #sponsors .btn{
   background-color: #2b2d70;
-  color: #ef26bd;
+  color: white;
   font-weight: bold;
   font-size: 15px;
 }
@@ -1526,6 +1529,8 @@ a.back-to-top:hover, a.back-to-top:focus {
   text-align: left;
   line-height: 12px;
   height: 35px;
+  text-align: center;
+  color:#A9A9A9;
 }
 
 .team-item .info-text h3 {
@@ -2361,7 +2366,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 .slider1,.slider2,.slider3{
   height: 700px;
-} 
+}
 .card {
   box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -2483,7 +2488,7 @@ text-align: center;
 }
 
 #faq .card{
-  color: #ef26bd;
+  color: #182348;
   text-align: left;
 }
 
@@ -2492,7 +2497,7 @@ text-align: center;
   padding: 5px;
   margin-left: 0;
   font-weight: bold;
-  border-right: 2px solid #4682B4; 
+  border-right: 2px solid #4682B4;
 }
 
 #faq .card-body{
