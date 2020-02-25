@@ -959,7 +959,11 @@ a.back-to-top:hover, a.back-to-top:focus {
     font-size: 20px;
   }
 
+  #sponsors .spnsors-logo{
+    width: 100%;
+  }
 }
+
 
 .about-item {
   padding: 10px;
