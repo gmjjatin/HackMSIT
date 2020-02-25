@@ -307,7 +307,7 @@ ul li, ol li {
 
 .btn-common:hover {
   color: #182348;
-  background: #F50057;
+  background: #007bff;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
   transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
